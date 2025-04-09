@@ -1,0 +1,25 @@
+import pandas as pd
+
+data = pd.read_csv("movies_list.csv")
+
+print(data) 
+print(data.head(2))
+print(data.columns)
+print(type(data))
+print(len(data))
+print(len(data.columns))
+print(data.Title[0])
+print(data)
+print(data.Director == "Peter Jackson")
+df = data[data.Genre.str.contains("The godfather", case = False)]
+print(df)
+print(data.info())
+print(data.tail())
+print(data.describe())
+print(data.min())
+print(data.max())
+# print(data["Title", "Director"])  
+print(data.iloc[0])
+print(type(data.iloc[0]))
+data = data.rename(columns={"Title" : "Don't know"})
+print(data)
