@@ -24,5 +24,5 @@ print(y_test[0:5])
 
 print(mean_squared_error(y_test, y_pred))
 
-
+# Output : 0.08096658116391442
 
