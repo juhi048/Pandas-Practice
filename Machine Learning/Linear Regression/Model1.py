@@ -53,6 +53,7 @@ print(y_pred[0:5])
 from sklearn.metrics import mean_squared_error
 print(mean_squared_error(y_test, y_pred))
 
+# Output : 0.6078347570872679
 
 # Note :  Value of mean_squared_error should be greater or equal to zero 
 #  lesser the value of mean_squared_error , it is good i.e value should be less only
